@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+content="width=device-width, initial-scale=1.0,minimum-scale=1,maximum-scale=1,user-scalable=no">
+<meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <script>
+        // 移动端适配
+        ; (function (document, window) {
+            let designWidth = 750;//设计稿宽度，需根据设计稿进行调整。
+            let deviceWidth = document.documentElement.clientWidth;//设备宽度
+            document.documentElement.style.fontSize = deviceWidth / designWidth * 100 + "px";
+            window.onresize = function () {
+                document.documentElement.style.fontSize = deviceWidth / designWidth * 100 + "px";
+            }
+        }(document, window))
+    </script>
+    <link rel="stylesheet" href="src/css/common/reset.css">
+    <link rel="stylesheet" href="src/css/common/iconfont.css">
+    <style>
+    
+    </style>
+</head>
+
+<body>
+    <div id="app"></div>
+<script type="text/javascript" src="app.js"></script></body>
+
+</html>
