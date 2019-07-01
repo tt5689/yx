@@ -56,7 +56,8 @@ export default {
         width: 100%;
         height: .98rem;
         box-sizing: border-box;
-        border-top:.02rem solid #d9d9d9;
+        border-top:1px solid #d9d9d9;
+        zoom: .5;
         .active{
             color: #b5262d;
         }
