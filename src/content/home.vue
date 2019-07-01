@@ -1,18 +1,30 @@
 <template>
 <div id="wrap">
-    <Home>
+    <div id="header_wrap">
+        <Header/>
+        <Nav/>
+    </div>
 <TabBar/>
 </div>
 </template>
 
 <script>
-import Home from '../content/home.vue';
-
+import Header from '../camp/header.vue';
+import Nav from '../camp/nav.vue';
+import TabBar from '../TabBar/tabbar.vue'
 export default {
     components:{
-        Home
+        Header,
+        Nav,
+        TabBar
     }
 }
 </script>
-<style>
+<style lang="scss" scoped>
+    #header_wrap{
+        width: 100%;
+        position: fixed;
+        top: 0;
+        left: 0;
+    }
 </style>
