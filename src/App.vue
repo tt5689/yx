@@ -1,14 +1,15 @@
 <template>
 <div>
-    <Home/>
+    <router-view></router-view>
+    <TarBar/>
 </div>
 </template>
 
 <script>
-import Home from './content/home.vue';
+import TarBar from './TabBar/tabbar.vue';
 export default {
     components:{
-        Home
+        TarBar
     }
 }
 </script>

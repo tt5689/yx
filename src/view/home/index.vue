@@ -9,9 +9,9 @@
 </template>
 
 <script>
-import Header from '../camp/header.vue';
-import Nav from '../camp/nav.vue';
-import TabBar from '../TabBar/tabbar.vue'
+import Header from './camp/header.vue';
+import Nav from './camp/nav.vue';
+import TabBar from '../../TabBar/tabbar.vue'
 export default {
     components:{
         Header,

@@ -1,0 +1,5 @@
+import Home from "../view/home/index.vue"
+import Classfiy from "../view/classfiy/index.vue"
+import Recognize from "../view/recognize/index.vue"
+import Car from "../view/shopingcar/index.vue"
+import Mine from "../view/mine/index.vue"

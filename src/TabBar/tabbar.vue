@@ -1,13 +1,12 @@
 <template>
     <footer id="u_foot">
         <ul>
-            <li v-for="(item,index) in tarBars" 
-                :key="index"
-                @click="handlerClick(index)"
-                :class = "activeIndex == index?'active':''">
+            <router-link v-for="(item ,index) in tarBars" 
+            :key="index" 
+            :to="item.path" tag="li">
                 <i :class="item.icon" class ="iconfont" ></i>
                 <span>{{item.title}}</span>
-            </li>
+            </router-link>
         </ul>
     </footer>
 </template>
@@ -19,23 +18,28 @@ export default {
             tarBars:[
                 {
                     icon:"iconyemian",
-                    title:"首页"
+                    title:"首页",
+                    path:"/home"
                 },
                 {
                     icon:'iconleimupinleifenleileibie1-outline',
-                    title:"分页"
+                    title:"分页",
+                    path:"/classfiy"
                 },
                 {
                     icon:'icontupian',
-                    title:'识物'
+                    title:'识物',
+                    path:'/recognize'
                 },
                 {
                     icon:'icongouwuche',
-                    title:'购物车'
+                    title:'购物车',
+                    path:'/shopingcar'
                 },
                 {
                     icon:'iconuser',
-                    title:'个人'
+                    title:'个人',
+                    path:'/mine'
                 }
             ],
             activeIndex:0,
@@ -58,7 +62,7 @@ export default {
         box-sizing: border-box;
         border-top:1px solid #d9d9d9;
         zoom: .5;
-        .active{
+        .router-link-active{
             color: #b5262d;
         }
         ul{
