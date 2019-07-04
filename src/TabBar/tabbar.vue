@@ -62,6 +62,7 @@ export default {
         box-sizing: border-box;
         border-top:1px solid #d9d9d9;
         zoom: .5;
+        background: #fff;
         .router-link-active{
             color: #b5262d;
         }

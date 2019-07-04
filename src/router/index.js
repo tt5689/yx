@@ -14,22 +14,27 @@ const router =  new VueRouter({
         {
             path:"/home",
             component:Home,
+            name:'home'
         },
         {
             path:"/classfiy",
             component:Classfiy,
+            name:'classfiy'
         },
         {
             path:"/recognize",
             component:Recognize,
+            name:'recognize'
         },
         {
-            path:"/shopingcar",
+            path:"/shopingcar",//动态路由
             component:Car,
+            name:'shopingcar'
         },
         {
-            path:"/mine",
+            path:"/mine/:id/:name",
             component:Mine,
+            name:'mine'
         },
     ]
 })

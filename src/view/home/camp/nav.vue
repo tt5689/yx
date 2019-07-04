@@ -7,7 +7,7 @@
                 </nav>
                 <div class="all_pind" v-if="!flage">全部频道</div>
             </div>
-            <div class="arraw" @click="handlerClick()">
+            <div class="arraw" @click="handlerMouseClick()">
                 <span class="arraw_bottom iconfont iconxiala" v-if="flage"></span>
                 <span class="arraw_bottom iconfont iconup" v-if="!flage"></span>
             </div>
@@ -15,11 +15,12 @@
             <ul class="all_nav" v-if="!flage">
                 <li v-for="(item,index) in data" 
                 :key="index"
+                @click="handlerClick(index)"
                 :class="activeIndex == index?'active':''"
                 >{{item}}</li>
             </ul>
         </div>
-        <div class="mask" v-if="!flage"></div>
+        <div class="mask" v-if="!flage" @click="handlerMouseClick()"></div>
 </div>
 
 </template>
@@ -33,15 +34,18 @@ export default {
         }
     },
     methods: {
-        handlerClick(){
+        handlerMouseClick(){
             this.flage = !this.flage;
+        },
+        handlerClick(index){
+            this.activeIndex = index;
         }
     },
 }
 </script>
 <style lang="scss" scoped>
 .t_h_nav{
-    position: relative;
+    position: absolute;
 }
 .thisisNav{
 position: absolute;
@@ -80,15 +84,15 @@ position: absolute;
 }
 
 .t_h_nav{
-    // overflow: hidden;
     height:100%;
+    width: 100%;
     .all_pind{
         padding: 0 .3rem;
     }
     .mask{
-        height: auto;
+        height: 100rem;
         position: absolute;
-        z-index: 1;
+        z-index: 2;
         top: 44px;
         left: 0;
         right: 0;
