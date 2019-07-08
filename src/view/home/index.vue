@@ -6,7 +6,7 @@
     </div>
     <MainContent/>
     <div class="toTop iconfont iconup"></div>
-<TabBar/>
+<TabBar v-if = "$route.meta.flag"/>
 </div>
 </template>
 
@@ -21,7 +21,10 @@ export default {
         Nav,
         MainContent,
         TabBar
-    }
+    },
+    created() {
+       console.log(this.$route.meta.flag); 
+    },
 }
 </script>
 <style lang="scss" scoped>

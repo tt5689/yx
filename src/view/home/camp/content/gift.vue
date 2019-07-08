@@ -8,7 +8,7 @@
             </a>
             <div class="git_right">
                 <div class="canteen">
-                    <a href="javascript:;">
+                    <a href="javascript:;" @click="handlerClick()"> 
                         <h4>福利社</h4>
                         <p>今日特价</p>
                         <img/>
@@ -28,7 +28,11 @@
 
 <script>
 export default {
-    
+    methods: {
+        handlerClick(){
+             this.$router.replace('/canteens');
+        }
+    },
 }
 </script>
 

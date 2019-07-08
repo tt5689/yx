@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+        content="width=device-width, initial-scale=1.0,minimum-scale=1,maximum-scale=1,user-scalable=no">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>页面适配</title>
+    <script>
+        // 移动端适配
+        ; (function (document, window) {
+            let designWidth = 750;//设计稿宽度，需根据设计稿进行调整。
+            let deviceWidth = document.documentElement.clientWidth;//设备宽度
+            document.documentElement.style.fontSize = deviceWidth / designWidth * 100 + "px";
+            window.onresize = function () {
+                document.documentElement.style.fontSize = deviceWidth / designWidth * 100 + "px";
+            }
+        }(document, window))
+    </script>
+    <link rel="stylesheet" href="../css/common/reset.css">
+    <link rel="stylesheet" href="../css/common/iconfont.css">
+    <link rel="stylesheet" href="../css/timeBuy.css">
+</head>
+
+<body>
+    <div class="m-flashSale">
+        <div class="screen-tabs">
+            <ul class="t-inner">
+                <li class="t-item">
+                    <p class="time">18:00</p>
+                    <p class="statusTxt">抢购中</p>
+                </li>
+                <li class="t-item">
+                    <p class="time">18:00</p>
+                    <p class="statusTxt">抢购中</p>
+                </li>
+                <li class="t-item">
+                    <p class="time">18:00</p>
+                    <p class="statusTxt">抢购中</p>
+                </li>
+                <li class="t-item">
+                    <p class="time">18:00</p>
+                    <p class="statusTxt">抢购中</p>
+                </li>
+            </ul>
+        </div>
+        <div class="time-content">
+            <div class="lastTime">
+                本场还剩：<i>00</i>：<i>00</i>：<i>00</i>
+            </div>
+            <div class="sc-list">
+                <div class="sc-item">
+                    <a href="javascript:;">
+                        <div class="sc-left">
+                            <img />
+                        </div>
+                        <div class="sc-right">
+                            <div class="innerName">儿童护脊减负书包（1-3年级）</div>
+                            <div class="desc">科学护脊，贴纸玩趣DIY</div>
+                            <div class="price-saleD">
+                                <span class="actulPrice">56</span>
+                                <span class="retailPrice">56</span>
+                                <span class="discount">7.5折</span>
+                            </div>
+                            <div class="line">
+                                <div class="progressWrap">20%</div>
+                                <button class="buy_btn">马上抢</button>
+                            </div>
+                        </div>
+                    </a>
+                </div>
+                <div class="sc-item">
+                    <a href="javascript:;">
+                        <div class="sc-left">
+                            <img />
+                        </div>
+                        <div class="sc-right">
+                            <div class="innerName">儿童护脊减负书包（1-3年级）</div>
+                            <div class="desc">科学护脊，贴纸玩趣DIY</div>
+                            <div class="price-saleD">
+                                <span class="actulPrice">56</span>
+                                <span class="retailPrice">56</span>
+                                <span class="discount">7.5折</span>
+                            </div>
+                            <div class="line">
+                                <div class="progressWrap">20%</div>
+                                <button class="buy_btn">马上抢</button>
+                            </div>
+                        </div>
+                    </a>
+                </div>
+            </div>
+        </div>
+        <div class="googGoods">
+            <div class="foorTitle">好货内部价</div>
+            <ul>
+                <li class="goodItem">
+                    <a href="javascript:;">
+                        <div class="sc-left">
+                            <img />
+                        </div>
+                        <div class="sc-right">
+                            <div class="innerName">儿童护脊减负书包（1-3年级）</div>
+                            <div class="desc">科学护脊，贴纸玩趣DIY</div>
+                            <div class="price-saleD">
+                                <span class="actulPrice">56</span>
+                                <span class="retailPrice">56</span>
+                            </div>
+                            <div class="line">
+                                <button class="see_btn">去看看</button>
+                            </div>
+                        </div>
+                    </a>
+                    <div class="showPinj">fssfdsfd</div>
+                </li>
+            </ul>
+        </div>
+        <div class="seeMore">查看更多</div>
+    </div>
+</body>
+
+</html>

@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>购物车</title>
+    <meta name="viewport"
+        content="width=device-width, initial-scale=1.0,minimum-scale=1,maximum-scale=1,user-scalable=no">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>页面适配</title>
+    <script>
+        // 移动端适配
+        ; (function (document, window) {
+            let designWidth = 750;//设计稿宽度，需根据设计稿进行调整。
+            let deviceWidth = document.documentElement.clientWidth;//设备宽度
+            document.documentElement.style.fontSize = deviceWidth / designWidth * 100 + "px";
+            window.onresize = function () {
+                document.documentElement.style.fontSize = deviceWidth / designWidth * 100 + "px";
+            }
+        }(document, window))
+    </script>
+    <link rel="stylesheet" href="../css/common/reset.css">
+    <link rel="stylesheet" href="../css/common/iconfont.css">
+    <link rel="stylesheet" href="../css/common/shopCar.css">
+</head>
+</head>
+
+<body>
+    <div class="shopCar">
+        <div class="shopHead">
+            <span>购物车</span>
+            <div class="right">
+                <p class="ticket">领券</p>
+                <p>编辑</p>
+            </div>
+        </div>
+
+        <ul class="cartGroupList">
+            <li class="gItem">
+                <!-- <i class="checkOut"></i> -->
+                <input type="checkbox" />
+                <img />
+                <div class="goodInfor">
+                    <p>dasdsdewe</p>
+                    <span>商品信息</span>
+                    <strong>dfsf</strong>
+                </div>
+                <div class="m-selnum">
+                    <button>-</button>
+                    <input type="text" />
+                    <button>+</button>
+                </div>
+            </li>
+            <li class="gItem">
+                <!-- <i class="checkOut"></i> -->
+                <input type="checkbox" />
+                <img />
+                <div class="goodInfor">
+                    <p>dasdsdewe</p>
+                    <span>商品信息</span>
+                    <strong>dfsf</strong>
+                </div>
+                <div class="m-selnum">
+                    <button>-</button>
+                    <input type="text" />
+                    <button>+</button>
+                </div>
+            </li>
+        </ul>
+
+        <div class="m-cartFt">
+            <input type="checkbox" />
+            <span>已选<i>1</i>件</span>
+            <strong>合计：<i>45</i>元</strong>
+            <button class="playP">下单</button>
+        </div>
+    </div>
+
+</body>
+
+</html>

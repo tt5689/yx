@@ -1,0 +1,127 @@
+.shopCar{
+    padding-bottom: 1.98rem;
+    background: #eee;
+}
+.shopHead{
+    height: .88rem;
+    line-height: .88rem;
+    padding: 0 .4rem;
+    text-align: center;
+    background-color: #fff;
+    position: relative;
+    border: 1px solid #eee;
+}
+.shopHead span{
+    float: left;
+    font-size: .4rem;
+}
+.right{
+    float: right;
+}
+.right p{
+    float: left;
+    margin-left: .4rem;
+    font-size: .3rem;
+}
+.ticket{
+    color: #B4282D;
+}
+.gItem{
+    height: 2.2rem;
+    margin-bottom: .2rem;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    background: #fff;
+    padding: 0 .3rem;
+    position: relative;
+}
+.checkOut{
+    display: inline-block;
+    width: .38rem;
+    height: .38rem;
+}
+.gItem img{
+    margin-left: .2rem;
+    margin-right: .2rem;
+    border-radius: 4px;
+    width: 1.72rem;
+    height: 1.72rem;
+    overflow: hidden;
+    background-color: #eee;
+}
+.goodInfor{
+    width: 4.2rem;
+}
+.goodInfor p{
+    max-height: .96rem;
+    line-height: .48rem;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    display: -webkit-box;
+    -webkit-line-clamp: 2;
+    -webkit-box-orient: vertical;
+}
+.goodInfor span{
+    display: block;
+    max-width: 4.34667rem;
+    color: #7F7F7F;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    overflow: hidden;
+}
+.goodInfor strong{
+    font-size: .37333rem;
+    line-height: .53333rem;
+    width: 3rem;
+}
+.m-selnum{
+    display: flex;
+    flex-direction: row;
+    position: absolute;
+    right: 0;
+    bottom: 0.2rem;
+    padding-top: .02667rem;
+    width: 2.37333rem;
+    height: .54rem;
+    background-origin: content-box;
+}
+.m-selnum input{
+    width: 1rem;
+    height: .54rem;
+    border: 1px solid #888;
+    box-sizing: border-box;
+}
+.m-cartFt{
+    width: 100%;
+    height: .96rem;
+    background: #fff;
+    position: fixed;
+    left: 0;
+    bottom: .98rem;
+    padding-left: .3rem;
+    box-sizing: border-box;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    color: #7f7f7f;
+}
+.m-cartFt strong{
+    color: #b4282d;
+    font-size: .3rem;
+    margin-left: .4rem;
+    margin-left: 2rem;
+}
+.playP{
+    position: absolute;
+    top: 0;
+    right: 0;
+    width: 2.26rem;
+    border: 0!important;
+    line-height: .96rem;
+    height: .96rem;
+    border-radius: 0;
+    font-size: .37333rem;
+    color: #fff;
+    background-color: #b4282d;
+}

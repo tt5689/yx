@@ -1,0 +1,315 @@
+<!DOCTYPE html>
+<html lang="zh">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+        content="width=device-width, initial-scale=1.0,minimum-scale=1,maximum-scale=1,user-scalable=no">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>页面适配</title>
+    <script>
+        // 移动端适配
+        ; (function (document, window) {
+            let designWidth = 750;//设计稿宽度，需根据设计稿进行调整。
+            let deviceWidth = document.documentElement.clientWidth;//设备宽度
+            document.documentElement.style.fontSize = deviceWidth / designWidth * 100 + "px";
+            window.onresize = function () {
+                document.documentElement.style.fontSize = deviceWidth / designWidth * 100 + "px";
+            }
+        }(document, window))
+    </script>
+    <link rel="stylesheet" href="../css/common/reset.css">
+    <link rel="stylesheet" href="../css/common/iconfont.css">
+    <link rel="stylesheet" href="../css/newPerson.css">
+</head>
+
+<body>
+    <div class="newPMain">
+        <div class="newPbanner"></div>
+        <div class="coupons">
+            <div class="inner">
+                <div class="innertop">
+                    <span class="title">新人礼</span>
+                    <span class="rule">活动规则 >></span>
+                </div>
+                <img src="https://yanxuan.nosdn.127.net/eb5b9647cdcc4a8b29f686b72e046a9e.png" />
+                <div class="loginBtn">立即领取</div>
+            </div>
+        </div>
+        <div class="serviceBar">
+            <div class="item">
+                <i class="iconfont iconyemian icon"></i>
+                <span class="icon_txt">数据驱动</span>
+            </div>
+            <div class="item">
+                <i class="iconfont iconyemian icon"></i>
+                <span class="icon_txt">数据驱动</span>
+            </div>
+            <div class="item">
+                <i class="iconfont iconyemian icon"></i>
+                <span class="icon_txt">数据驱动</span>
+            </div>
+            <div class="item">
+                <i class="iconfont iconyemian icon"></i>
+                <span class="icon_txt">数据驱动</span>
+            </div>
+        </div>
+        <div class="stick">
+            <a class="listitem" href="javascript:;">新人专享价</a>
+            <a class="listitem" href="javascript:;">新人专享价</a>
+            <a class="listitem" href="javascript:;">新人专享价</a>
+            <a class="listitem" href="javascript:;">新人专享价</a>
+        </div>
+        <div class="newUserExclusive">
+            <div class="newExheader">
+                - 新人爆款专享价 -
+            </div>
+            <div class="relativeGood">
+                <div class="foolrtile">
+                    <div class="line1">ioff胜多负少</div>
+                    <div class="line2">范德萨范德萨</div>
+                </div>
+                <div class="itemList">
+                    <div class="oneitem">
+                        <a href="#">
+                            <img />
+                            <div class="line1">sdada</div>
+                            <div class="line2">sdada</div>
+                            <div class="line3">sdada</div>
+                        </a>
+                        <i class="iconfont icongouwuche cart"></i>
+                    </div>
+                    <div class="oneitem">
+                        <a href="#">
+                            <img />
+                            <div class="line1">sdada</div>
+                            <div class="line2">sdada</div>
+                            <div class="line3">sdada</div>
+                        </a>
+                        <i class="iconfont icongouwuche cart"></i>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+        <div class="popularItems">
+            <h2>24小时热销商品</h2>
+            <div class="ppItemList">
+                <div class="pitem">
+                    <img />
+                    <div class="pline1">dsadssss</div>
+                    <div class="pline2">dsadssss</div>
+                </div>
+                <div class="pitem">
+                    <img />
+                    <div class="pline1">dsadssss</div>
+                    <div class="pline2">dsadssss</div>
+                </div>
+                <div class="pitem">
+                    <img />
+                    <div class="pline1">dsadssss</div>
+                    <div class="pline2">dsadssss</div>
+                </div>
+            </div>
+        </div>
+        <div class="starReputationModule">
+            <h2>明星口碑商品</h2>
+            <div class="starList">
+                <div class="oneItem">
+                    <div class="imgWrap">
+                        <a href="javascript:;">
+                            <img />
+                        </a>
+                    </div>
+                    <div class="infoWrap">
+                        <div class="num">1</div>
+                        <div class="line1">fseefs</div>
+                        <div class="line2">fefer</div>
+                        <div class="line3">
+                            <span>45</span>
+                            <i class="iconfont icongouwuche cart"></i>
+                        </div>
+                    </div>
+                </div>
+                <div class="oneItem">
+                    <div class="imgWrap">
+                        <a href="javascript:;">
+                            <img />
+                        </a>
+                    </div>
+                    <div class="infoWrap">
+                        <div class="num">1</div>
+                        <div class="line1">fseefs</div>
+                        <div class="line2">fefer</div>
+                        <div class="line3">
+                            <span>45</span>
+                            <i class="iconfont icongouwuche cart"></i>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="appSaleItem">
+            <div class="saleTitle">
+                <div class="saleline1">App特惠 ></div>
+                <div class="saleline2">限时直降, 可与优惠券叠加</div>
+            </div>
+            <div class="saleList">
+                <div class="saleItem">
+                    <a href="javascript:;">
+                        <img />
+                        <div class="tagWrap">
+                            <span class="tag-status gradientPrice">sss</span>
+                            <div class="line1">cdsfsafsafsa</div>
+                            <div class="line2">
+                                <span class="price">56</span>
+                                <span class="counterprice">456</span>
+                            </div>
+                            <div class="addGoods">加入购物车</div>
+                        </div>
+                    </a>
+                </div>
+                <div class="saleItem">
+                    <a href="javascript:;">
+                        <img />
+                        <div class="tagWrap">
+                            <span class="tag-status gradientPrice">sss</span>
+                            <div class="line1">cdsfsafsafsa</div>
+                            <div class="line2">
+                                <span class="price">56</span>
+                                <span class="counterprice">456</span>
+                            </div>
+                            <div class="addGoods">加入购物车</div>
+                        </div>
+                    </a>
+                </div>
+                <div class="saleItem">
+                    <a href="javascript:;">
+                        <img />
+                        <div class="tagWrap">
+                            <span class="tag-status gradientPrice">sss</span>
+                            <div class="line1">cdsfsafsafsa</div>
+                            <div class="line2">
+                                <span class="price">56</span>
+                                <span class="counterprice">456</span>
+                            </div>
+                            <div class="addGoods">加入购物车</div>
+                        </div>
+                    </a>
+                </div>
+            </div>
+            <div class="appdownLoad">
+                <div class="apl-line1">下载APP领1000元新人礼</div>
+                <div class="apl-line2">使用APP下单即可享受APP特惠</div>
+                <div class="apl-btn">立即下载</div>
+            </div>
+        </div>
+        <div class="m-flashSale">
+            <div class="m-titleWithSubTitle">
+                <div class="fa-line1">严选限时购</div>
+                <div class="fa-line2">全站优惠 限时限量</div>
+            </div>
+            <div class="screen-tabs">
+                <ul class="t-inner">
+                    <li class="t-item">
+                        <p class="time">18:00</p>
+                        <p class="statusTxt">抢购中</p>
+                    </li>
+                    <li class="t-item">
+                        <p class="time">18:00</p>
+                        <p class="statusTxt">抢购中</p>
+                    </li>
+                    <li class="t-item">
+                        <p class="time">18:00</p>
+                        <p class="statusTxt">抢购中</p>
+                    </li>
+                    <li class="t-item">
+                        <p class="time">18:00</p>
+                        <p class="statusTxt">抢购中</p>
+                    </li>
+                </ul>
+            </div>
+            <div class="sc-list">
+                <div class="sc-item">
+                    <a href="javascript:;">
+                        <div class="sc-left">
+                            <img/>
+                        </div>
+                        <div class="sc-right">
+                            <div class="innerName">儿童护脊减负书包（1-3年级）</div>
+                            <div class="desc">科学护脊，贴纸玩趣DIY</div>
+                            <div class="price-saleD">
+                                <span class="actulPrice">56</span>
+                                <span class="retailPrice">56</span>
+                                <span class="discount">7.5折</span>
+                            </div>
+                            <div class="line">
+                                <div class="progressWrap">20%</div>
+                                <button class="buy_btn">马上抢</button>
+                            </div>
+                        </div>
+                    </a>
+                </div>
+                <div class="sc-item">
+                        <a href="javascript:;">
+                            <div class="sc-left">
+                                <img/>
+                            </div>
+                            <div class="sc-right">
+                                <div class="innerName">儿童护脊减负书包（1-3年级）</div>
+                                <div class="desc">科学护脊，贴纸玩趣DIY</div>
+                                <div class="price-saleD">
+                                    <span class="actulPrice">56</span>
+                                    <span class="retailPrice">56</span>
+                                    <span class="discount">7.5折</span>
+                                </div>
+                                <div class="line">
+                                    <div class="progressWrap">20%</div>
+                                    <button class="buy_btn">马上抢</button>
+                                </div>
+                            </div>
+                        </a>
+                    </div>
+            </div>
+        </div>
+        <div class="pinModule">
+            <div class="m-titleWithSubTitle">
+                <div class="fa-line1">严选1元拼团</div>
+                <div class="fa-line2">新人专享 一起买更实惠</div>
+            </div>
+            <div class="pinList">
+                <div class="pinItem">
+                    <a href="javascript:;">
+                        <img/>
+                        <div class="db">
+                            <h3>fdsfsd</h3>
+                            <div class="pinclass">
+                                <span class="newprice">1.00</span>
+                                <span class="originprice">单买价格<i>565</i></span>
+                            </div>
+                            <button class="kaitua">去开团</button>
+                        </div>
+                    </a>
+                </div>
+            </div>
+            <div class="pinList">
+                    <div class="pinItem">
+                        <a href="javascript:;">
+                            <img/>
+                            <div class="db">
+                                <h3>fdsfsd</h3>
+                                <div class="pinclass">
+                                    <span class="newprice">1.00</span>
+                                    <span class="originprice">单买价格<i>565</i></span>
+                                </div>
+                                <button class="kaitua">去开团</button>
+                            </div>
+                        </a>
+                    </div>
+                </div>
+        </div>
+    </div>
+
+</body>
+
+</html>
